@@ -48,7 +48,6 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
-
 .col-1 {
   flex: 0 0 calc(100% / 12);
   max-width: calc(100% / 12);
@@ -106,6 +105,7 @@ body {
 
 
 
+/* top elements */
 header {
   padding: 1rem 2rem;
   display: flex;
@@ -118,7 +118,7 @@ header {
 .logo-img {
   margin-right: 2rem;
 }
-
+/* ----------------- */
 nav {
   margin-bottom: 2rem;
 }
@@ -144,7 +144,11 @@ nav {
 .navbar-link:hover {
   background: rgba(0, 0, 0, 0.2);
 }
+/* ----------------- */
+/* top elements end */
 
+
+/* components */
 .info-card {
   background-color: white;
   padding: 1rem;
@@ -159,3 +163,5 @@ nav {
 .info-card p {
   margin: 0;
 }
+/* ----------------- */
+/* components end */
