@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800&display=swap");
 
 :root {
   --light-gray: #d9d9d9;
   --dark-gray: #3a3a3a;
   --blue: #43cfd9;
   --green: #74d14c;
-  --shadow-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -16,9 +18,92 @@ body {
   padding: 0;
   margin: 0;
   background: var(--light-gray);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
+
+/* grid classes */
+.container {
+  padding: 0 2rem;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  margin-left: -1rem;
+}
+.row.no-gutter {
+  margin-right: auto;
+  margin-left: auto;
+}
+*[class*="col-"],
+.col {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  position: relative;
+  width: 100%;
+}
+.no-gutter > *[class*="col-"],
+.no-gutter > .col {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.col-1 {
+  flex: 0 0 calc(100% / 12);
+  max-width: calc(100% / 12);
+}
+.col-2 {
+  flex: 0 0 calc(100% / 12 * 2);
+  max-width: calc(100% / 12 * 2);
+}
+.col-3 {
+  flex: 0 0 calc(100% / 12 * 3);
+  max-width: calc(100% / 12 * 3);
+}
+.col-4 {
+  flex: 0 0 calc(100% / 12 * 4);
+  max-width: calc(100% / 12 * 4);
+}
+.col-5 {
+  flex: 0 0 calc(100% / 12 * 5);
+  max-width: calc(100% / 12 * 5);
+}
+.col-6 {
+  flex: 0 0 calc(100% / 12 * 6);
+  max-width: calc(100% / 12 * 6);
+}
+.col-7 {
+  flex: 0 0 calc(100% / 12 * 7);
+  max-width: calc(100% / 12 * 7);
+}
+.col-8 {
+  flex: 0 0 calc(100% / 12 * 8);
+  max-width: calc(100% / 12 * 8);
+}
+.col-9 {
+  flex: 0 0 calc(100% / 12 * 9);
+  max-width: calc(100% / 12 * 9);
+}
+.col-10 {
+  flex: 0 0 calc(100% / 12 * 10);
+  max-width: calc(100% / 12 * 10);
+}
+.col-11 {
+  flex: 0 0 calc(100% / 12 * 11);
+  max-width: calc(100% / 12 * 11);
+}
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.col-auto {
+  flex: 0 0 auto;
+  max-width: 100%;
+  width: auto;
+}
+/* grid classes end */
+
 
 
 header {
@@ -33,7 +118,6 @@ header {
 .logo-img {
   margin-right: 2rem;
 }
-
 
 nav {
   margin-bottom: 2rem;
@@ -60,7 +144,6 @@ nav {
 .navbar-link:hover {
   background: rgba(0, 0, 0, 0.2);
 }
-
 
 .info-card {
   background-color: white;
