@@ -1,0 +1,31 @@
+.section-wrapper {
+  padding: 0 2rem;
+  display: flex;
+  margin-right: -1rem;
+  margin-left: -1rem;
+}
+.section-wrapper aside {
+  flex: 0 0 25%;
+  max-width: 25%;
+  margin: 0 1rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section-wrapper article {
+  flex: 0 0 75%;
+  max-width: 75%;
+  margin: 0 1rem;
+}
+
+
+.aside-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.aside-wrapper .info-card {
+  display: inline-block;
+  min-width: 10rem;
+}
