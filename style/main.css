@@ -7,10 +7,28 @@
   --green: #74d14c;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
   background: var(--light-gray);
   font-family: 'Poppins', sans-serif;
+}
+
+
+header {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--dark-gray);
+}
+.page-title {
+  display: inline-block;
+}
+.logo-img {
+  margin-right: 2rem;
 }
 
