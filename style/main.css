@@ -32,3 +32,30 @@ header {
   margin-right: 2rem;
 }
 
+
+nav {
+  margin-bottom: 2rem;
+}
+.navbar-list {
+  list-style: none;
+  width: 100%;
+  padding: 0.75rem 2rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom right, var(--blue), var(--green));
+}
+.navbar-list-item {
+  margin: 0 1.5rem;
+}
+.navbar-link {
+  text-decoration: none;
+  color: var(--dark-gray);
+  font-weight: 800;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+}
+.navbar-link:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
