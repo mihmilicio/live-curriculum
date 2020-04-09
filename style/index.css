@@ -14,14 +14,20 @@
 
 .article-col {
   display: flex;
-  flex-wrap: wrap;
-  margin-right: -1rem;
-  margin-left: -1rem;
 }
-.col-aluno {
-  flex: 0 0 calc(100% / 3);
-  max-width: calc(100% / 3);
-  padding: 0 1rem;
+.article-col > .row {
+  flex-grow: 1;
+}
+.aluno-col {
   border-right: 2px dotted var(--dark-gray);
   border-left: 2px dotted var(--dark-gray);
+}
+.aluno-error {
+  text-align: center;
+}
+.gg-danger {
+  --ggs: 1.5;
+  color: var(--red);
+  transform-origin: top;
+  margin: 0 auto;
 }
