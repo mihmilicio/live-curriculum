@@ -10,6 +10,7 @@
   --shadow-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+/* #region base */
 *,
 *::before,
 *::after {
@@ -26,8 +27,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+/* #endregion base */
 
-/* grid classes */
+/* #region grid classes */
 .container {
   padding: 0 2rem;
   flex-grow: 1;
@@ -107,11 +109,11 @@ body {
   max-width: 100%;
   width: auto;
 }
-/* grid classes end */
+/* #endregion */
 
 
 
-/* top elements */
+/* #region top elements */
 header {
   padding: 1rem 2rem;
   display: flex;
@@ -151,10 +153,10 @@ nav {
   background: rgba(0, 0, 0, 0.2);
 }
 /* ----------------- */
-/* top elements end */
+/* #endregion top elements end */
 
 
-/* components */
+/* #region components */
 .info-card {
   background-color: white;
   padding: 1rem;
@@ -205,8 +207,8 @@ nav {
   transition: all 0.5s ease;
 }
 
-/* components end */
+/* #endregion components end */
 
-/* utilities */
+/* #region utilities */
 .text-danger { color: var(--red); }
-/* utilities end */
+/* #endregion utilities end */
