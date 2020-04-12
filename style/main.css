@@ -165,6 +165,7 @@ footer {
   background: linear-gradient(to bottom right, var(--blue), var(--green));
   padding: 0.5rem 2rem;
   text-align: center;
+  margin-top: 2rem;
 }
 /* #endregion footer elements */
 
