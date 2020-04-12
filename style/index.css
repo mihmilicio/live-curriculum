@@ -26,8 +26,10 @@ header.index-style {
   flex-grow: 1;
 }
 .aluno-col {
-  border-right: 2px dotted var(--dark-gray);
-  border-left: 2px dotted var(--dark-gray);
+  border-right: 2px dashed var(--dark-gray);
+}
+.aluno-col:first-child {
+  border-left: 2px dashed var(--dark-gray);
 }
 .aluno-error {
   text-align: center;
