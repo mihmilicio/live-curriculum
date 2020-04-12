@@ -1,8 +1,19 @@
+:root {
+  --bg: var(--light-gray);
+}
+
 header.index-style {
   background: var(--light-gray);
 }
 .navbar-list.index-style {
   background: linear-gradient(to bottom right, var(--blue), var(--green));
+  border-bottom: none;
+}
+.navbar-list.index-style .navbar-link {
+  background: none;
+}
+.navbar-list.index-style .navbar-link:hover {
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .aside-col {

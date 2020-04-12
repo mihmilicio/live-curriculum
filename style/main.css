@@ -8,6 +8,7 @@
   --red: #c42c21;
   --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   --shadow-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  --bg: rgb(67, 207, 217, 0.15);
 }
 
 /* #region base */
@@ -20,7 +21,7 @@
 body {
   padding: 0;
   margin: 0;
-  background: var(--light-gray);
+  background: var(--bg);
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 
@@ -138,6 +139,7 @@ nav {
   margin: 0;
   display: flex;
   justify-content: center;
+  border-bottom: 2px solid var(--dark-gray);
 }
 .navbar-list-item {
   margin: 0 1.5rem;
@@ -148,9 +150,10 @@ nav {
   font-weight: 800;
   border-radius: 0.5rem;
   padding: 0.25rem 0.5rem;
+  background: rgba(0, 0, 0, 0.15);
 }
 .navbar-link:hover {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.25);
 }
 /* ----------------- */
 /* #endregion top elements end */
