@@ -5,3 +5,33 @@
   margin-bottom: 1rem;
   border: 3px solid var(--green);
 }
+
+
+.article-col {
+  border-left: 2px dashed var(--dark-gray);
+}
+.section-title {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.content-col {
+  border-right: 2px dashed var(--dark-gray);
+}
+
+.info-title {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px 0.5rem 10px;
+}
+.info-title::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: calc(100% + 20px);
+  background: var(--default-gradient);
+  left: -10px;
+  top: 0;
+  z-index: -1;
+}
