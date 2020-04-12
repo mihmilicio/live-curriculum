@@ -182,9 +182,6 @@ footer {
   margin: 0;
 }
 /* ----------------- */
-.info-block {
-
-}
 .info-block:not(:last-child) {
   margin-bottom: 1rem;
 }
