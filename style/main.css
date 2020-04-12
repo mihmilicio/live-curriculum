@@ -26,6 +26,7 @@ body {
 
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 /* #endregion base */
 
@@ -137,7 +138,6 @@ nav {
   margin: 0;
   display: flex;
   justify-content: center;
-  background: linear-gradient(to bottom right, var(--blue), var(--green));
 }
 .navbar-list-item {
   margin: 0 1.5rem;
@@ -154,6 +154,16 @@ nav {
 }
 /* ----------------- */
 /* #endregion top elements end */
+
+
+
+/* #region footer elements */
+footer {
+  background: linear-gradient(to bottom right, var(--blue), var(--green));
+  padding: 0.5rem 2rem;
+  text-align: center;
+}
+/* #endregion footer elements */
 
 
 /* #region components */
@@ -205,6 +215,15 @@ nav {
   color: white;
   background: linear-gradient(to bottom right, var(--blue), var(--green));
   transition: all 0.5s ease;
+}
+/* ----------------- */
+.dark-link {
+  font-weight: 700;
+  text-decoration: underline dotted;
+  color: var(--dark-gray);
+}
+.dark-link:hover {
+  text-decoration: underline wavy;
 }
 
 /* #endregion components end */
