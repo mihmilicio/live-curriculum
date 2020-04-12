@@ -1,3 +1,10 @@
+header.index-style {
+  background: var(--light-gray);
+}
+.navbar-list.index-style {
+  background: linear-gradient(to bottom right, var(--blue), var(--green));
+}
+
 .aside-col {
   display: flex;
   flex-wrap: wrap;
