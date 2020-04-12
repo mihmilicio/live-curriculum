@@ -1,0 +1,49 @@
+fieldset {
+  border: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+legend {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  width: 25rem;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+}
+
+.form-group {
+  width: 25rem;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+.form-control {
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 0.5rem 0.5rem;
+  width: 100%;
+  resize: vertical;
+  font-family: inherit;
+  border: 1px solid transparent;
+  border-bottom: 3px solid var(--green);
+  transition: all 0.3s ease;
+}
+.form-control:invalid {
+  border-bottom-color: var(--red);
+  box-shadow: none;
+}
+.form-control:focus {
+  border-color: var(--blue);
+}
+
+
+.btn-wrapper {
+  text-align: right;
+}

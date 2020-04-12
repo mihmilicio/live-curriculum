@@ -26,6 +26,44 @@
   </nav>
 
   <section class="container">
+    <form id="contact-form">
+      <fieldset>
+        <legend>Formulário de Contato</legend>
+
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" id="name" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Telefone</label>
+          <input type="text" id="phone" class="form-control" />
+        </div>
+
+        <div class="form-group">
+          <label for="priority">Prioridade</label>
+          <select id="priority" class="form-control">
+            <option value="1">Baixa</option>
+            <option value="2" selected>Média</option>
+            <option value="3">Alta</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensagem</label>
+          <textarea id="message" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group btn-wrapper">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </fieldset>
+    </form>
   </section>
 
   <footer>
