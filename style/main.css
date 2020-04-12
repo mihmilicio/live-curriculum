@@ -201,6 +201,7 @@ footer {
 .info-block small {
   font-style: italic;
   color: var(--dark-gray);
+  line-height: 3;
 }
 /* ----------------- */
 .action-center {
@@ -231,6 +232,14 @@ footer {
 }
 .dark-link:hover {
   text-decoration: underline wavy;
+}
+/* ----------------- */
+.gradient-divider {
+  border: none;
+  height: 2px;
+  width: 100%;
+  background: var(--default-gradient);
+  margin: 2rem 0;
 }
 
 /* #endregion components end */
