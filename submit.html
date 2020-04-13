@@ -1,0 +1,75 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://css.gg/c?=|check-o">
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/submit.css">
+  <title>Live Curriculum</title>
+</head>
+<body>
+  <header>
+    <img src="img/logo.png" class="logo-img" />
+    <h1 class="page-title">DW-I</h1>
+  </header>
+
+  <section class="container">
+    <div class="row">
+      <div class="col-3 feedback-col">
+        <i class="gg-check-o"></i>
+        <p class="feedback">
+          Formulário enviado com sucesso!
+        </p>
+      </div>
+      <div class="col-9 info-col">
+        <div class="row">
+          <div class="col-auto">
+            <div class="info-card">
+              <h4>Nome</h4>
+              <p id="name"><i>Não informado</i></p>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="info-card">
+              <h4>E-mail</h4>
+              <p id="email"><i>Não informado</i></p>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="info-card">
+              <h4>Telefone</h4>
+              <p id="phone"><i>Não informado</i></p>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="info-card">
+              <h4>Prioridade</h4>
+              <p id="priority"><i>Não informado</i></p>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="info-card">
+              <h4>Mensagem</h4>
+              <p id="message"><i>Não informado</i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; Desenvolvido por 
+    <a href="https://github.com/mihmilicio" target="_blank" class="dark-link">Milena Milicio</a> 
+    - 2020 | Hosteado no Github Pages 
+  </footer>
+</body>
+<script>
+  var urlParams = new URLSearchParams(window.location.search);
+  for(key of urlParams.keys()) {
+    if (urlParams.get(key) != "") {
+      document.getElementById(key).innerHTML = urlParams.get(key).split("\n").join('<br/>');
+    }    
+  }
+</script>
+</html>
